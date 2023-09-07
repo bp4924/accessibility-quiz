@@ -18,17 +18,33 @@
       <nav>
         <ul>
           <li>
-            <a href="">INFO</a>
+            <a href="#student-info">INFO</a>
           </li>
           <li>
-            <a href="">HTML</a>
+            <a href="#html-questions">HTML</a>
           </li>
           <li>
-            <a href="">CSS</a>
+            <a href="#css-questions">CSS</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <form
+        action="https://freecodecamp.org/practice-project/accessibility-quiz"
+        method="post"
+      >
+        <section role="region" aria-labelledby="student-info">
+          <h2 id="student-info">Student Info</h2>
+        </section>
+        <section role="region" aria-labelledby="html-questions">
+          <h2 id="html-questions">HTML Questions</h2>
+        </section>
+        <section role="region" aria-labelledby="css-questions">
+          <h2 id="css-questions">CSS Questions</h2>
+        </section>
+      </form>
+      <input type="submit" id="submit" value="submit" />
+    </main>
   </body>
 </html>
