@@ -131,9 +131,41 @@
         </section>
         <section role="region" aria-labelledby="css-questions">
           <h2 id="css-questions">CSS Questions</h2>
+          <div class="formrow">
+            <div class="question-block">
+              <label for="a1">Are you a frontend developer?</label>
+            </div>
+            <div class="answer">
+              <select name="a1" id="a1" required>
+                <option value="">Select an option</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+            <div class="question-block">
+              <label for="info">Do you have any questions?</label>
+            </div>
+            <div class="answer">
+              <textarea
+                name="info"
+                id="info"
+                placeholder="Questions?"
+                cols="50"
+                rows="5"
+              ></textarea>
+            </div>
+          </div>
         </section>
+        <input type="submit" id="submit" value="Send" />
       </form>
-      <input type="submit" id="submit" value="submit" />
     </main>
+    <footer>
+      <address>
+        freecodecamp<br />
+        San Francisco<br />
+        California<br />
+        USA
+      </address>
+    </footer>
   </body>
 </html>
